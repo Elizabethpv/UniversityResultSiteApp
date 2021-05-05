@@ -1,0 +1,30 @@
+﻿@model UniversityResultSiteApp.Models.Student
+@{
+    @{
+        ViewBag.Title = "StudentView";
+    }
+
+    <h2>StudentView</h2>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Malayalam</th>
+            <th>English</th>
+            <th>Hindi</th>
+            <th>Status</th>
+        </tr>
+
+        
+        <tr>
+            <td>@Model.ID</td>
+            <td>@Model.Name</td>
+            <td>@Model.Malayalam</td>
+            <td>@Model.English</td>
+            <td>@Model.Hindi</td>
+            <td>@Model.Status</td>
+        </tr>
+        }
+
+    </table>

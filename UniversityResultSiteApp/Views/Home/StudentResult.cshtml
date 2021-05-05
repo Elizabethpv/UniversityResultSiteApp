@@ -1,0 +1,19 @@
+﻿@model UniversityResultSiteApp.Models.Student
+
+@{
+    ViewBag.Title = "StudentResult";
+}
+
+<h2>StudentResult</h2>
+
+@using (Html.BeginForm("StudentResult", "Home", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <th> <input type="text" name="StudentRegisterNumber" id="testChar" /></th>
+            <th><input type="submit" name="btnSearch" value="Search" onclick="location.href='@Url.Action("Create", "User")'"/></th>
+        </tr>
+
+    </table>
+}
+
